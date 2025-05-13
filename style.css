@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+body{
+    text-align: center;
+    line-height: 2.5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgreen;
+    padding: 15px 20px;
+color: white;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    font-size: 1.24em;
+}
+
+/* First Selection */
+.first {
+    position: relative;
+    height: 100vh;
+    background: url('./asset/Screenshot\ \(38\).png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+} 
+
+.first-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    /* Warna transparen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.first h2 {
+    font-size: 3em;
+}
+
+.first p {
+    font-size: 1.5em;
+    width: 70%;
+}
+section{
+    padding: 50px 20px;
+}
+
+#about{
+    background: #a6d587;
+}
+
+
+/* Galeri */
+
+#gallery {
+    background: #c2c3d4;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item{
+    background: #EAF2FF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Kontak */
+#contact {
+    background: f4f4f4;
+}
+
+
+address p a {
+    color: #004080;
+    text-decoration: none;
+}
+
+adress p a:hover {
+    text-decoration: underline;
+}
